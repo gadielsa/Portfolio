@@ -148,14 +148,14 @@ section .header{
     font-weight: 600;
 }
 
-.features{
+.skills{
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
-.features .card{
+.skills .card{
     background-color: #323232;
     padding: 1rem;
     border: 2px solid transparent;
@@ -163,12 +163,12 @@ section .header{
     transition: all 0.3s ease;
 }
 
-.features .card:hover{
+.skills .card:hover{
     background-color: #585c4b;
     border-color: #fff;
 }
 
-.features .card span{
+.skills .card span{
     display: inline-block;
     background-color: #c3b19d;
     padding: 2px 9px;
@@ -178,24 +178,24 @@ section .header{
     border-radius: 5px;
 }
 
-.features .card h4{
+.skills .card h4{
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.features .card p{
+.skills .card p{
     color: #ccc;
     margin-bottom: 1rem;
 }
 
-.features .card a{
+.skills .card a{
     color: #fff;
     transition: all 0.3s ease;
 }
 
-.features .card a:hover{
+.skills .card a:hover{
     color: #c3b19d;
 }
 
@@ -206,14 +206,14 @@ section .header{
     color: #ccc;
 }
 
-.pricing{
+.projects{
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.pricing .card{
+.projects .card{
     padding: 3rem 2rem;
     background-color: #323232;
     display: flex;
@@ -223,24 +223,24 @@ section .header{
     transition: all 0.3s ease;
 }
 
-.pricing .card:hover{
+.projects .card:hover{
     background-color: #585c4b;
     border-color: #fff;
 }
 
-.pricing .card .content{
+.projects .card .content{
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.pricing .card h4{
+.projects .card h4{
     margin-bottom: 1rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.pricing .card h3{
+.projects .card h3{
     color: #fff;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
@@ -249,26 +249,59 @@ section .header{
     border-bottom: 2px dashed #fff;
 }
 
-.pricing .card p{
+.projects .card p{
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
-.pricing .card p i{
+.projects .card p i{
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.pricing .card button{
+.projects .card button{
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
 }
 
-.pricing .card button:hover{
+.projects .card button:hover{
     background-color: #c3b19d;
     border-color: #c3b19d;
+}
+
+.about{
+    margin-top: 4rem;
+    display:flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.about .card{
+    padding: 3rem 2rem;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.about .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.about .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.about .card:hover{
+    border-color: #fff;
 }
 
 footer{
@@ -346,10 +379,10 @@ footer .column > a:hover{
     header .image{
         grid-area: 1/1/2/2;
     }
-    .features{
+    .skills{
         grid-template-columns: repeat(2, 1fr);
     }
-    .pricing{
+    .projects{
         grid-template-columns: repeat(2, 1fr);
     }
     footer{
@@ -362,11 +395,11 @@ footer .column > a:hover{
         display: none;
     }
 
-    .features{
+    .skills{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .pricing{
+    .projects{
         grid-template-columns: repeat(1, 1fr);
     }
 
