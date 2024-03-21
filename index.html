@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Gadiel Vargas</title>
 </head>
@@ -13,10 +14,10 @@
 
     <nav>
         <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">Skills</a></li>
-            <li id="link2" class="link"><a href="#">Projects</a></li>
-            <li id="link3" class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#one" data-element-id="linkHome">Home</a></li>
+            <li class="link"><a href="#two" data-element-id="linkSkills">Skills</a></li>
+            <li class="link"><a href="#three" data-element-id="linkProjects">Projects</a></li>
+            <li class="link"><a href="#four" data-element-id="linkAbout">About</a></li>
         </ul>
         <button class="btn">Hire Me</button>
     </nav>
@@ -26,11 +27,14 @@
             <span class="blur"></span>
             <span class="blur"></span>
             <h4></h4>
-            <H1>Hi, I'm <span>Gadiel Vargas</span>, Web Developer</H1>
+            <H1 id="linkHome">Hi, I'm <span>Gadiel Vargas</span>, Web Developer</H1>
             <p>
                 Computer Science student at UNISINOS.
             </p>
-            <button class="btn">Get Started</button>
+            <a href download='file:///C:/Users/Gadita/Desktop/GG/Gadiel/Currículos/GadielVargasCV-eng-us.pdf'></a><button class="btn">
+                Resume
+                <span><i class="ri-download-2-line"></i></span>
+            </button></a>
         </div>
         <div class="image">
             <img id="imgCircle" src="assets/socialCircle.png">
@@ -39,55 +43,41 @@
     </header>
 
     <section class="container">
-        <h2 class="header">Skills</h2>
+        <h2 id="linkSkills" class="header">Skills</h2>
         <div class="skills">
             <div class="card">
-                <span><i class="ri-javascript-line"></i></span>
-                <h4>JavaScript</h4>
-                <p>
-                    Resumir conhecimentos na linguagem.
-                </p>
-            </div>
-            <div class="card">
                 <span><i class="ri-html5-line"></i></span>
-                <h4>HTML5</h4>
-                <p>
-                    Escrever sobre html. 
-                </p>
+                <h4>HTML</h4>
             </div>
             <div class="card">
                 <span><i class="ri-css3-line"></i></span>
-                <h4>CSS3</h4>
-                <p>
-                    Escrever habilidades sobre CSS.
-                </p>
+                <h4>CSS</h4>
             </div>
             <div class="card">
-                <span><i class="ri-java-line"></i></span>
-                <h4>Java</h4>
-                <p>
-                    Escrever habilidades sobre Java.
-                </p>
+                <span><i class="ri-javascript-line"></i></span>
+                <h4>JavaScript</h4>
             </div>
             <div class="card">
-                <span><i class="ri-puzzle-line"></i></span>
-                <h4>Problem solving</h4>
-                <p>
-                    Escrever sobre habilidades de resolução de problemas.
-                </p>
+                <span><i class="ri-cup-line"></i></span>
+                <h4>Java POO</h4>
+            </div>
+            <div class="card">
+                <span><i class="ri-cup-line"></i></span>
+                <h4>Python</h4>
+            </div>
+            <div class="card">
+                <span><i class="ri-database-2-line"></i></span>
+                <h4>Database</h4>
             </div>
             <div class="card">
                 <span><i class="ri-bug-line"></i></span>
                 <h4>Bug Fixing</h4>
-                <p>
-                    Escrever um pouco sobre esta habilidade.
-                </p>
             </div>
         </div>
     </section>
 
     <section class="container">
-        <h2 class="header">Projects</h2>
+        <h2 id="linkProjects" class="header">Projects</h2>
         <div class="projects">
             <div class="card">
                 <div class="content">
@@ -106,7 +96,7 @@
                         First project
                     </p>
                 </div>
-                <button class="btn">Repository</button>
+                <a class="linkRepo" href='https://github.com/GadielVargas/Barbearia'><button class="btn">Repository</button></a>
             </div>
             <div class="card">
                 <div class="content">
@@ -114,58 +104,77 @@
                     <img class="imgProjects" src="assets/e-Ticket.png">
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Programming logic
+                        Bug fixing
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Problem solving
+                        More knolowge about UI
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        First project
+                        Programmed with JavaScript
                     </p>
                 </div>
-                <button class="btn">Repository</button>
+                <a class="linkRepo" href='https://github.com/GadielVargas/e-Ticket'><button class="btn">Repository</button></a>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Bank Acount</h4>
+                    <img class="imgProjects" src="assets/bank-line.png">
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Run on terminal
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Validation of data
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Programmed with Java
+                    </p>
+                </div>
+                <a class="linkRepo" href='https://github.com/GadielVargas/contaBancaria'><button class="btn">Repository</button></a>
             </div>
             <div class="card">
                 <div class="content">
                     <h4>Weather App</h4>
-                    <img id="imgCircle" src="assets/socialCircle.png">
+                    <img class="imgProjects" src="assets/weather.png">
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Pro codes
+                        HTML
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Smart coding plan
+                        CSS
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        At home workouts
+                        Developing JavaScript codes
                     </p>
                 </div>
-                <button class="btn">Repository</button>
+                <a class="linkRepo" href=''><button class="btn">Developing</button></a>
             </div>
             <div class="card">
                 <div class="content">
                     <h4>ATM Console App</h4>
-                    <img id="imgCircle" src="assets/bank-line.png">
+                    <img class="imgProjects" src="assets/loop-right-line.png">
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
                         Blockchain
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Programming with Java
+                        Programming with Python
                     </p>
                 </div>
-                <button class="btn">In progress</button>
+                <a class="linkRepo" href=''><button class="btn">Developing</button></a>
             </div>
         </div>
     </section>
     
     <section class="container">
-        <h2 class="header">About</h2>
+        <h2 id="linkAbout" class="header">About</h2>
         <div class="about">
             <div class="card">
                 <div class="content">
@@ -182,8 +191,8 @@
         <div class="column">
             <div class="socials">
                 <a href="#"><i class="ri-mail-line"></i></a>
-                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="#"><i class="ri-github-fill"></i></a>
+                <a href='https://www.linkedin.com/in/gadiel-vargas-a831a922a/'><i class="ri-linkedin-box-fill"></i></a>
+                <a href='https://github.com/GadielVargas'><i class="ri-github-fill"></i></a>
             </div>
         </div>
     </footer>
