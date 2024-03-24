@@ -68,10 +68,12 @@ nav{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .btn:hover{
     background-color: #323232;
+    border-color: #fff;
 }
 
 .container{
@@ -263,19 +265,13 @@ section .header{
 
 .projects .card button{
     color: #fff;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: #c3b19d;
+    border: 2px solid transparent;
 }
 
 .projects .card button:hover{
     background-color: #323232;
     border-color: #fff;
-}
-
-.linkRepo{
-    display: flex;
-    align-items: center;
-    padding: 1rem 5rem;
 }
 
 .about{
