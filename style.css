@@ -384,7 +384,7 @@ footer .column .socials a:hover{
 
 @keyframes in {
    to{
-        transition: (fade-in 1s ease-out forwards);
+        transition: ease-in;
     }
 }
   
