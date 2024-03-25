@@ -122,28 +122,28 @@ header .content p{
     color: #ccc;
 }
 
-header #imgnobg{
+#imgnobg{
     opacity: 1;
     display: block;
     max-width: 350px;
     margin-right: 10px;
-    transition: 2s ease;
     backface-visibility: hidden;
 }
 
-header #imgCircle{
+#imgCircle{
     max-width: 350px;
     margin: auto;
     position: absolute;
-    animation-name: out;
-    animation-duration: 2s;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 
-header #imgCircle:hover{
+header:hover #imgCircle{
+    opacity: 0;
+}
+
+#imgCircle:hover{
     opacity: 1;
-    animation-name: in;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 
 section .header{
@@ -383,18 +383,3 @@ footer .column .socials a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
-
-@keyframes in {
-   to{
-        transition: ease-in;
-    }
-}
-  
-  @keyframes out {
-    from{
-        transition: (fade-in 1s ease-in forwards);
-    }
-   to{
-        transition: (fade-out 1s ease-out forwards);
-    }
-  }
