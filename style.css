@@ -64,7 +64,7 @@ nav{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #ffffff;
-    background-color: #c3b19d;
+    background-color: #323232;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -72,7 +72,7 @@ nav{
 }
 
 .btn:hover{
-    background-color: #323232;
+    background-color: transparent;
     border-color: #fff;
 }
 
@@ -176,12 +176,14 @@ section .header{
 
 .skills .card span{
     display: inline-block;
-    background-color: #c3b19d;
+    background-color: #585c4b;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
     color: #fff;
     border-radius: 5px;
+    border: 2px solid transparent;
+    border-color: #fff;
 }
 
 .skills .card h4{
@@ -265,8 +267,8 @@ section .header{
 
 .projects .card button{
     color: #fff;
-    background-color: #c3b19d;
-    border: 2px solid transparent;
+    background-color: transparent;
+    border: 2px solid #fff;
 }
 
 .projects .card button:hover{
